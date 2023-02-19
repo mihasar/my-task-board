@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Task board</title>
+    <link rel="shortcut icon" href="assets/image/favicon.ico" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="main.js"></script>
+
+</head>
+<h1>My Task Board</h1>
+
+<body>
+
+    <div class="form-container">
+        <form onsubmit="addTasks()">
+            <label></label>
+            <br>
+            <input type="text" id="taskTextBox" required>
+            <br>
+            <label></label>
+            <br>
+            <input type="date" min="" id="dateBox" required>
+            <br><br>
+            <label></label>
+            <input type="time" id="TimeBox" required>
+            <br><br>
+            <button class="btn btn-success"></button>
+            <button type="reset" class="btn btn-danger"></button>          
+    </div>
+    </form>
+    <div id="divContainer"></div>
+</body>
+
+</html>
